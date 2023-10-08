@@ -14,13 +14,12 @@ public static final int[][]RookMoves = {{1,0},{-1,0},{0,1},{0,-1}};
 	{
 		int nextrow = currow+move[0];
 		int nextcol = curcol+move[1];
-		
-		if(nextrow>=1 && nextrow < Board_Size && nextcol >= 1 && nextcol< Board_Size)
+		while(nextrow>=1 && nextrow <= Board_Size && nextcol >= 1 && nextcol<= Board_Size)
 		{
 			PossibleMove.add(new int[]{nextrow,nextcol});
 			nextrow += move[0];
-			nextcol += move[1];
-		}			
+			nextcol += move[1];	
+	}
 	}
 	return PossibleMove;
 }
@@ -34,9 +33,7 @@ public static void main(String[] args) {
 	for(int[]move : PossibleMove)
 		
 	{
-		System.out.println(++count+"="+"{"+move[0]+","+move[1]+"}");
-		
+		System.out.println(++count+"="+"{"+move[0]+","+move[1]+"}");	
 	}
 }
-
 }

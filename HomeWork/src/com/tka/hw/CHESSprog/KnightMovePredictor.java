@@ -22,8 +22,8 @@ public class KnightMovePredictor {
 		return predictor;
 	}
 	public static void main(String[] args) {
-		int currow =3;
-		int curcol =3;
+		int currow =8;
+		int curcol =7;
 		int count =0;
 		List<int[]>possiblemove=Knightpredictor(currow,curcol);
 		System.out.println("Possible move of {"+currow+","+curcol+"}");

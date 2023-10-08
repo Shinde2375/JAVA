@@ -5,7 +5,7 @@ public class test {
 
 	public static void main(String[] args) {
 		product p1 = new product();
-		p1.id=101; p1.name="pencile"; p1.price=10;
+		p1.id=101; p1.name="pencil"; p1.price=10;
 		
 		product p2 = new product();
 		p2.id=103; p2.name="pen"; p1.price=30;

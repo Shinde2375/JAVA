@@ -1,7 +1,4 @@
 package com.tka.basic.demo1;
-
-
-
 public class Bill
 {
 	public double GenerateBill(product p1,product p2,product p3)

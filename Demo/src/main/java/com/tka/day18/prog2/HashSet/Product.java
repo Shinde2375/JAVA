@@ -1,6 +1,6 @@
 package com.tka.day18.prog2.HashSet;
 
-public class Product {
+public class Product implements Comparable<Product> {
 
 	int id;
 	String name;
@@ -18,5 +18,10 @@ public class Product {
 	@Override
 	public String toString() {
 		return "Product [id=" + id + ", name=" + name + ", price=" + price + "]";
+	}
+	@Override
+	public int compareTo(Product s) {
+		// TODO Auto-generated method stub
+		return this.id - s.id;
 	}	
 }
