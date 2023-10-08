@@ -32,5 +32,4 @@ public class test {
 		prod.forEach(p->System.out.println("\n"+p.name+" "+p.price));
 	System.out.println("Total Bill are :"+o.calcTotal());
 	}
-	//asdf
 }
